@@ -1,4 +1,4 @@
-In order to build use: docker build -t <mytag> ./<path-to-repo>
+In order to build use: docker build -t [mytag] ./[path-to-repo]
 This application implements custom command 'getdb' use with:
 python manage.py getdb
 This command will run initially to set up a database while building docker image.
