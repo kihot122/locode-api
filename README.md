@@ -1,0 +1,8 @@
+In order to build use: docker build -t <mytag> ./mysite
+This application implements custom command 'getdb' use with:
+python manage.py getdb
+This command will run initially to set up a database while building docker image.
+
+This will download up-to-date file from UNECE and parse it into database. THIS COMMAND WILL ERASE ANY DATA THAT WAS PREVIOUSLY STORED INSIDE THE DATABASE, USE WITH CAUTION.
+
+For serving dynamic content, ex. api requests, this server uses uwsgi.
